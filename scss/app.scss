@@ -1,6 +1,10 @@
 @import "settings";
 @import "foundation";
 
+// Variables
+$horizontal-center: 0 auto 0 auto;
+$standard-border: 1px solid black;
+
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
@@ -38,3 +42,36 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+// Center navigation links 
+nav.top-bar {
+	text-align: center;
+}
+section.top-bar-section {
+	display: inline-block;
+}
+
+// Circle for my face
+#circle {
+	width: 150px;
+	height: 150px;
+	background-image: url("../images/head.jpg");
+	background-size: 105%;
+	background-position: center;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border-radius: 75px;
+	margin: $horizontal-center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: $standard-border;
+}
+
+#name {
+	text-align: center;
+}
+
+h1, h2 {
+	display: inline;
+}
+
