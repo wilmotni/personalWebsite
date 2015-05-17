@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicolas Wilmot | Front-End Developer</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -17,9 +18,9 @@
   <section class="top-bar-section">
     <!-- Left Nav Section -->
     <ul class= "left">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </section>
 </nav>
@@ -32,17 +33,32 @@
             </div>
         </div>
         <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Who Am I?</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>What I'm Using</p>
+          <div class="large-12 large-centered columns text-center">
+            <div id="social">
+              <i class="fa fa-codepen fa-2x" id="cdpn"></i>
+              <i class="fa fa-github fa-2x" id="gthb"></i>
+              <i class="fa fa-linkedin fa-2x" id="lkin"></i>
             </div>
           </div>
         </div>
+        <div class="row collapse" id="home-content">
+          <div class="large-6 medium-6 columns" id="about">
+              <h3>Who Am I?</h3>
+              <p>Currently located in the heart of mid-Michigan, in the beautiful city of East Lansing. I aspire to create awesome pieces of work for the web. Admittedly, I have a lot to learn, but that may be my favorite part of what I do, challenging myself to learn something new every day. I graduated from Michigan State University in May of 2014</p>
+          </div>
+          <div class="large-6 medium-6 columns" id="using">
+              <h3>What I'm Using</h3>
+              <ul id="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript/jQuery</li>
+                <li>Git/GitHub</li>
+                <li>WordPress</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id ="footer">
       &copy 2015 Nicolas Wilmot
     </div>
