@@ -51,6 +51,39 @@ section.top-bar-section {
 	display: inline-block;
 }
 
+ul.left li {
+	width: 100px;
+}
+
+.top-bar-section ul li > a {
+	padding-left: 0;
+}
+
+// Footer
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -2.8125rem; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+#footer, .page-wrap:after {
+  height: 2.8125rem; 
+}
+#footer {
+  background: #222;
+  color: #FFF;
+  text-align: center;
+}
+
 // Circle for my face
 #circle {
 	width: 150px;
@@ -77,14 +110,20 @@ h1, h2 {
 
 // Social icons
 #social {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
+
+.social-links {
+	color: #222;
+}
+
 #gthb {
 	margin-right: 10px;
 	margin-left: 10px;
 }
 
 #cdpn:hover, #gthb:hover, #lkin:hover {
+	color: #222;
 	opacity: .7;
 }
 
@@ -101,20 +140,16 @@ h1, h2 {
 }
 
 #about {
-	border-right: 2px solid black;
+	;
+}
+
+#using {
+;
 }
 
 #skills {
 	margin-left: 0;
 	list-style: none;
-}
-
-// Footer
-#footer {
-	width: 100%;
-	height: 100px;
-	text-align: center;
-	border-top: 1px solid black;
 }
 
 // Contact page
@@ -126,5 +161,27 @@ h1, h2 {
 #prj1,#prj2,#prj3,#prj4,#prj5,#prj6 {
 	background-color: rgba(200,200,200,0.3);
 	border: 1px solid black;
-	height: 150px;
+	height: 200px;
 }
+
+.grid-wrap {
+	margin-top: 50px;
+}
+
+.portfolio-thumb {
+	height: 200px;
+	width: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: $horizontal-center;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 0;
+}
+#eclectic-strength {
+	background-image: url("../images/EclecticStrength-thumb.png");
+}
+#interactive-list {
+	background-image: url("../images/InteractiveList-thumb.png");
+}
+

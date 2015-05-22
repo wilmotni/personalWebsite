@@ -9,11 +9,12 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+  <div class="page-wrap">
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name"><!-- Leave this empty --></li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu <i class="fa fa-bars fa-lg"></i></span></a></li>
   </ul>
   <section class="top-bar-section">
     <!-- Left Nav Section -->
@@ -24,40 +25,42 @@
     </ul>
   </section>
 </nav>
-<div class="row">
-  <div class="large-12 columns">
-    <p>If you would like to contact me, whether it is to discuss a potential project or you just want to talk to me, please use the contact form below.</p>
-  </div>
-</div>
-<form>
-  <div class="row">
-    <div class="large-6 columns">
-      <label>Name
-        <input type="text">
-      </label>
-    </div>
-    <div class="large-6 columns">
-      <label>Email
-        <input type="text">
-      </label>
-    </div>
-  </div>
+<div class="grid-wrap">
   <div class="row">
     <div class="large-12 columns">
-      <label>Message
-        <input type="text" id="form-message">
-      </label>
+      <p>If you would like to contact me, whether it is to discuss a potential project or you just want to talk to me, please use the contact form below.</p>
     </div>
   </div>
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="large-4 columns" id="sub-button">
-        <input type="submit" class="button" value="Submit Message"/>
+  <form>
+    <div class="row">
+      <div class="large-6 columns">
+        <label>Name
+          <input type="text">
+        </label>
+      </div>
+      <div class="large-6 columns">
+        <label>Email
+          <input type="text">
+        </label>
       </div>
     </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Message
+          <input type="text" id="form-message">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="large-4 columns" id="sub-button">
+          <input type="submit" class="button" value="Submit Message"/>
+        </div>
+      </div>
+    </div>
+  </form>
   </div>
-</form>
-
+</div>
 <div id ="footer">
   &copy 2015 Nicolas Wilmot
 </div>
