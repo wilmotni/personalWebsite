@@ -161,6 +161,7 @@ h1, h2 {
 // Home content (about/skills)
 #home-content {
 	background-color: rgba(200,200,200,0.3);
+	@include card(1);
 }
 
 #about,#using {
@@ -186,6 +187,14 @@ h1, h2 {
 // Contact page
 #sub-button {
 	margin: $horizontal-center;
+}
+
+#contact-form {
+	width: 95%;
+	margin: $horizontal-center;
+	margin-top: 50px;
+	padding-top: 15px;
+	@include card(1);
 }
 
 // Work page
